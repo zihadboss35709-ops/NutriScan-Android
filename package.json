@@ -1,13 +1,13 @@
 {
   "name": "nutriscan-ai",
   "version": "1.0.0",
-  "description": "NutriScan AI — AI-powered food calorie scanner Android app",
+  "description": "NutriScan AI - Android App",
   "private": true,
   "scripts": {
-    "sync": "cap sync android",
-    "open": "cap open android",
-    "build:android": "cap sync android && cd android && ./gradlew assembleRelease",
-    "build:aab": "cap sync android && cd android && ./gradlew bundleRelease"
+    "sync": "npx cap sync android",
+    "open": "npx cap open android",
+    "build:android": "npx cap sync android",
+    "build:aab": "npx cap sync android"
   },
   "dependencies": {
     "@capacitor/android": "^6.2.0",
@@ -21,6 +21,7 @@
     "@capacitor/status-bar": "^6.0.1"
   },
   "devDependencies": {
-    "@capacitor/cli": "^6.2.0"
+    "@capacitor/cli": "^6.2.0",
+    "typescript": "^5.4.5"
   }
 }
