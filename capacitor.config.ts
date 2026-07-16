@@ -1,0 +1,40 @@
+import { CapacitorConfig } from '@capacitor/cli';
+
+const config: CapacitorConfig = {
+  appId: 'com.nutriscan.ai',
+  appName: 'NutriScan AI',
+  webDir: 'www',
+  server: {
+    url: 'https://nutri-scan-mate--aaaaaa35709.replit.app',
+    cleartext: false,
+    androidScheme: 'https',
+  },
+  android: {
+    allowMixedContent: false,
+    captureInput: true,
+    webContentsDebuggingEnabled: false,
+    backgroundColor: '#1B5E20',
+  },
+  plugins: {
+    SplashScreen: {
+      launchShowDuration: 2500,
+      launchAutoHide: true,
+      backgroundColor: '#1B5E20',
+      androidSplashResourceName: 'splash',
+      androidScaleType: 'CENTER_CROP',
+      showSpinner: false,
+      splashFullScreen: true,
+      splashImmersive: true,
+    },
+    StatusBar: {
+      style: 'DARK',
+      backgroundColor: '#1B5E20',
+      overlaysWebView: false,
+    },
+    Camera: {
+      presentationStyle: 'fullscreen',
+    },
+  },
+};
+
+export default config;
